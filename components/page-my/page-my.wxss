@@ -1,0 +1,73 @@
+/* pages/my/my.wxss */
+.container{
+  background-color: #fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ margin-left:20rpx;
+ margin-top:0rpx;
+}
+
+.userinfo-avatar {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.line{
+  height: 3rpx;
+  width: 100%;
+  background-color:#f0f0f0;
+  margin-top: 18rpx;
+}
+.three{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.rightline{
+  border-right: 3rpx solid #f0f0f0
+}
+.gray{
+  height: 20rpx;
+  background-color:#f5f2e9;
+  width: 100%;
+  margin-top:40rpx;
+}
+.threeticket{
+  margin-top: 30rpx;
+}
+.launcher{
+  display: flex;
+  flex-direction: row;
+  margin-top:20rpx;
+  align-items: center;
+  justify-content: space-between;
+  width: 680rpx
+}
+.lau{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ width:200rpx
+}
+.ren{
+  width: 40rpx;
+  height: 40rpx;
+}
+.launcher text{
+  font-size: 28rpx;
+}
+.more{
+  height: 40rpx;
+  width:40rpx; 
+}

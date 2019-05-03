@@ -1,0 +1,60 @@
+.item{
+  background-color: #dea59c;
+  height:150rpx;
+  width: 82%;
+ border-radius: 12rpx;
+ margin-top:40rpx;
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+.img{
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: -90rpx;
+  margin-top:-14rpx
+}
+.item1{
+  width: 94%;
+  height:80%;
+  border:5rpx dashed #f3e6de;
+  margin-left:16rpx;
+  margin-top:12rpx;
+  display: flex;
+  flex-direction: row
+
+}
+span{
+  color:#edcfc7;
+  font-size:80rpx;
+  border-right:5rpx dashed #f3e6de;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  font-weight: 600;
+}
+
+.neirong{
+  color: #666f6c;
+  display: flex;
+  flex-direction: column;
+  margin-left:20rpx;
+}
+.title{
+  font-size: 40rpx;
+}
+.date{
+  font-size:24rpx;
+  text-align: right
+}
+.yishiyong{
+  height: 100rpx;
+  width: 100rpx;
+  margin-right:-30rpx;
+  position: absolute;
+ right: 92rpx;
+  z-index: 200
+}

@@ -1,0 +1,5 @@
+{
+  "component": true,
+  "usingComponents": {"mythree-cmp":"/components/mythree/mythree",
+    "myticket-cmp":"/components/myticket/myticket"}
+}

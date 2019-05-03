@@ -1,0 +1,7 @@
+<view class="container">
+   <view class="con">
+   <image class="icon" src="{{src}}"></image>
+   <text class="use" >{{use}}</text>
+   </view>
+   <image class="icon" src="/images/更多.png" bind:tap="ticket"></image>
+</view>

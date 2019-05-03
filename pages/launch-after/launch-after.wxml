@@ -1,0 +1,34 @@
+<view class="container">
+<image src="{{imgsrc}}"> </image>
+<view class="content">
+<text class="neirong">免单：{{title}} X{{num}}</text>
+<text class="date">{{orderData}}截止</text>
+</view>
+<view class="user">
+<text >发起人</text>
+<view class="user1">
+<image src="{{userInfo.avatarUrl}}"></image>
+<text>{{userInfo.nickName}}</text>
+</view>
+</view>
+
+</view>
+
+<view class="share">
+  
+     <view class="sharebtn" >
+       <button bind:tap="sharebtn">发送免单邀请</button>
+     </view>
+</view>
+
+<view class="sharelist" wx-if="{{show}}">
+  <button open-type='share'>指定分享—微信好友</button>
+  <button bind:tap="shareImgbtn">公开分享—生成分享图</button>
+  <button bind:tap="cancel">取消</button>
+</view>
+
+<canvas canvas-id="shareImg" style="width:604px;height:1016px"></canvas>
+<view hidden='{{hidden}}' class='preview'>
+  <image src='{{prurl}}' mode='widthFix'></image>
+  <button type='primary' size='mini' bind:tap='save'>保存分享图</button>
+</view>

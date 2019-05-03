@@ -1,0 +1,10 @@
+<view bind:tap="onTap" class="container">
+  <image class="good_img" src="{{good.image}}"></image>
+  <view class="description">
+    <text class='num'>集赞免单：{{good.dianzanshu}}个</text>
+    <view class='title'><text>[{{good.title}}]</text></view>
+    <view  class='date'>
+      <text >{{good.date}}  截止</text> 
+    </view>
+  </view>
+</view>

@@ -1,0 +1,178 @@
+.one{
+
+  width: 100%;
+}
+.one image{
+  width: 100%;
+  height: 626rpx
+}
+.mian{
+   z-index: 99;
+  position: absolute;
+  top:150rpx;
+  left: 185rpx;
+  color: #666f6c
+}
+.quan{
+  z-index: 99;
+  position: absolute;
+  top:200rpx;
+  left:180rpx;
+  color: #666f6c;
+  font-size: 28rpx
+}
+.two{
+  height: 390rpx;
+  width: 680rpx;
+  background-color: #fff;
+  position: absolute;
+  top:310rpx;
+  left:35rpx;
+  display: flex;
+  flex-direction: column;
+   box-shadow:-1px -1px 30rpx #ebeaea,1px -1px 30rpx #ebeaea;
+    
+}
+.haicha{
+  font-size: 26rpx;
+  color:#666f6c;
+   margin-top:10rpx;
+  margin-left: 30rpx;
+}
+.num{
+  color:#dea59c
+}
+.dangqian{
+  margin-top:30rpx;
+  margin-left: 30rpx;
+}
+progress{
+  width: 540rpx;
+   margin-top:30rpx;
+  margin-left: 30rpx;
+  }
+  .tiao{
+    display: flex;
+    flex-direction: row
+  }
+  .percent{
+    color:#dea59c;
+    font-size: 28rpx;
+    margin-top:30rpx;
+    margin-left:6rpx;
+ 
+  }
+  .btn{
+    display: flex;
+    flex-direction: row;
+    background-color: #dea59c;
+    width: 600rpx;
+    height: 90rpx;
+    border-radius: 50rpx;
+    margin-top: 50rpx;
+    margin-left: 40rpx;
+  
+  }
+  .zan{
+    width: 70rpx;
+    height: 70rpx;
+    margin-left: 60rpx;
+    padding-right: 40rpx;
+    margin-top:6rpx;
+  }
+  .btntitle{
+  line-height: 90rpx;
+  color: #fff;
+  position: absolute;
+  margin-left: 150rpx;
+  margin-top:-90rpx;
+  }
+
+    .btn1{
+    display: flex;
+    flex-direction: row;
+    background-color: #dea59c;
+    width: 600rpx;
+    height: 90rpx;
+    border-radius: 50rpx;
+    margin-top: 242rpx;
+    margin-left: 40rpx;
+    z-index:99;
+    position: absolute
+  
+  }
+  .btntitle1{
+    line-height: 90rpx;
+  color: #fff;
+  position: absolute;
+  margin-left: 180rpx;
+  margin-top:-90rpx;
+  }
+
+  .three{
+    height: 200rpx;
+    width: 680rpx;
+    background-color: #fff;
+    position: absolute;
+  top:730rpx;
+  left:35rpx;
+    box-shadow: -1px -1px 30rpx #ebeaea,1px -1px 30rpx #ebeaea;
+  }
+.head1{
+  font-size: 30rpx;
+
+}
+.head2{
+  font-size: 26rpx;
+  color:#666f6c
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: 30rpx;
+  margin-top:30rpx
+}
+.head view{
+  width: 140rpx;
+}
+.head image{
+  height: 36rpx;
+  width:36rpx;
+  margin-top:12rpx;
+  margin-left: 8rpx;
+  position: absolute;
+}
+.user{
+  width: 90%;
+  margin-left: 30rpx;
+  margin-top:30rpx
+}
+.user image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx
+}
+
+.four{
+  height: 300rpx;
+    width: 680rpx;
+    background-color: #fff;
+    position: absolute;
+  top:960rpx;
+  left:35rpx;
+    box-shadow: -1px -1px 30rpx #ebeaea,1px -1px 30rpx #ebeaea;
+}
+.four .head{
+   font-size: 30rpx;
+   margin-top:-10rpx;
+}
+.gui{
+  font-size: 26rpx;
+  margin-top:50rpx;
+  margin-left: 30rpx;
+  color: #666f6c
+
+}

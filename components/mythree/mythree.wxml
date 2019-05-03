@@ -1,0 +1,4 @@
+<view class="container">
+<text class="num">{{num}}</text>
+ <text class="text">{{like}}</text>
+</view>

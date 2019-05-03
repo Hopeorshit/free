@@ -1,0 +1,16 @@
+<view class="container">
+<view class="title_mian">
+ 今日免单
+
+</view>
+
+
+<view class="good_container">
+<block wx:for="{{goods}}" wx:key=''>
+  <index-cmp good="{{item}}"/>
+</block>
+</view>
+
+</view>
+<view class="pink">
+</view>

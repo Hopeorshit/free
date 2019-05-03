@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 660rpx;
+  height: 520rpx;
+  background-color: #fff;
+  margin-top:30rpx;
+   box-shadow: 2px 2px 2px #e3e3e3;
+  }
+
+
+  .good_img{
+    width:100%;
+    height: 300rpx;
+    
+}
+.description{
+  margin-left:20rpx; 
+  width:620rpx;
+  height: 200rpx;
+  position:absolute;  
+  bottom: 18rpx;
+  display: flex; 
+  flex-direction: column;
+}
+.title{
+height:100rpx;
+margin-top:6rpx;
+}
+
+.num{
+  color:#dea59c;
+  font-size: 28rpx;
+}
+
+.title text{
+font-size:36rpx;
+color:#666f6c;
+
+}
+.date text{
+  font-size:24rpx;
+  color:#c1bac1
+}

@@ -1,0 +1,49 @@
+<view class="one">
+    <image src="/images/dianzan.png"></image>
+    <text class="mian">免单券</text>
+   <text class="quan">【小东北 豪华双人餐】</text>
+</view>
+
+<view class="two">
+ <text class="dangqian">当前助力</text>
+ <text class="haicha">还差<text class="num">12</text>个赞有机会免单成功</text>
+ <view class="tiao">
+ <progress percent='70' activeColor='#dea59c' stroke-width="20" active ></progress>
+ <text class="percent">54/66</text>
+ </view>
+ <view class="btn" bindtap='dianzan'>
+  <image class="zan"src="/images/zan.png"></image>
+  <text class="btntitle">
+  给Ta点赞，助力免单
+  </text>
+ </view>
+ <view class="btn1" bindtap='canyu' hidden="{{dianzan}}">
+  <text class="btntitle1">
+  我 也 要 免 单
+  </text>
+ </view>
+</view>
+
+<view class="three">
+  <view class="head">
+  <text class="head1">已有54名用户帮好友加速</text>
+  <view >
+  <text class="head2">查看全部</text>
+  <image src="/images/more.png"></image>
+  </view>
+  </view>
+
+  <view class="user">
+  <image src="/images/user.png"></image>
+  <image src="/images/user.png"></image>
+  <image src="/images/user.png"></image>
+  </view>
+</view>
+
+<view class="four">
+  <text class="head">
+    活动规则
+  </text>
+  <text class="gui">1. 单次免单活动每个用户只能加速一次</text>
+</view>
+

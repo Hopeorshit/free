@@ -1,0 +1,117 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 500rpx;
+  background-color: #fff;
+  padding: 0;
+  border-top:1rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #f0f0f0
+  }
+  .changeimg{
+    position: 
+  }
+
+
+  .good_img{
+    width:100%;
+    height: 360rpx;   
+}
+.description{
+  margin-left:20rpx; 
+  width:700rpx;
+  height: 100rpx;
+  position:absolute;  
+  bottom: 24rpx;
+  display: flex; 
+  flex-direction: column;
+}
+.title{
+height:100rpx;
+
+}
+
+.title text{
+font-size:36rpx;
+/* color:#666f6c; */
+color:#dea59c
+}
+.address{
+display: flex;
+flex-direction: row;
+justify-items: center;
+align-items: center;
+}
+.address image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.address text{
+    font-size:24rpx;
+    color:#c1bac1
+}
+.conent{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.conent1{
+  width: 660rpx;
+  font-size: 32rpx;
+  color:#666f6c;
+  margin-top:30rpx
+}
+.conent1 text{
+  background-color: #f3e6de;
+  padding:10rpx
+ 
+}
+.conent2{
+  margin-top:30rpx;
+  width: 630rpx;
+  font-size: 28rpx;
+  color: #666f6c;
+  text-indent: 60rpx;
+  line-height: 56rpx;
+  border:1rpx solid #f0f0f0;
+  padding: 10rpx 10rpx 10rpx 26rpx;
+  
+}
+.date{
+  font-size:24rpx;
+  color:#c1bac1;
+  margin-left: -60rpx
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  background-color:#f5f2e9;
+  height:200rpx;
+  bottom:0;
+  align-items: center;
+  justify-content: center;
+  
+}
+.canyu{
+width: 300rpx;
+height: 100rpx;
+background-color: #dea59c;
+color:#fff;
+line-height: 100rpx;
+text-align: center;
+margin-right: 20rpx;
+}
+.faqi{
+ width: 300rpx;
+height: 100rpx;
+border:1rpx solid #dea59c;
+color:#dea59c;
+line-height: 100rpx;
+text-align: center
+}
+
+
+
+

@@ -1,0 +1,27 @@
+/* components/myticket/myticket.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 680rpx;
+  height: 90rpx;
+  border-bottom: 3rpx solid #f0f0f0;
+  margin-left:26rpx;
+}
+.icon{
+  height: 40rpx;
+  width: 40rpx;
+}
+.use{
+font-size: 28rpx;
+color:#666f6c
+}
+.con{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 150rpx;
+  
+}

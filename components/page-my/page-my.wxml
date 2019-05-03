@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="line"></view>
+  <view class="three">
+ 
+  <mythree-cmp class="rightline"style="flex:1"like="发起记录" num='4'/>
+  <mythree-cmp style="flex:1"like="免单记录" num='1'/>
+  </view>
+
+  <view class="gray"></view>
+
+  <view class="threeticket">
+  <myticket-cmp src="/images/未使用.png" use="未使用"/>
+  <myticket-cmp src="/images/已使用.png" use="已使用"/>
+  <myticket-cmp src="/images/过.png" use="已过期"/>
+  </view>
+
+  <view class="gray"></view>
+
+ 
+</view>
+

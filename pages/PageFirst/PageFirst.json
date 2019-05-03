@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "index-cmp":"../../components/page-index/page-index",
+    "unuse-cmp": "../../components/page-unuse/page-unuse",
+    "my-cmp": "../../components/page-my/page-my"
+  }
+}

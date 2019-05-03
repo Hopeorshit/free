@@ -1,0 +1,4 @@
+{
+  "component": true,
+  "usingComponents": {"index-cmp":"../index/index"}
+}

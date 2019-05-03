@@ -1,0 +1,32 @@
+<view class="container">
+ 
+  <view class="item" bind:tap="use1">
+  <view class="item1">
+      <image class="img" src="/images/youhuiquan.png"></image>
+        <span>免</span>
+        <view class="neirong">
+        <text class="title">小东北豪华四人套餐</text>
+        <text class="date">有效期至2019-04-23</text>
+        </view>
+      <image src="/images/yishiyong.png" wx:if="{{checked1}}" class="yishiyong"></image>
+    </view>
+          
+    
+  </view>
+
+    <view class="item" bind:tap="use2">
+  <view class="item1">
+      <image class="img" src="/images/youhuiquan.png"></image>
+        <span>免</span>
+        <view class="neirong">
+        <text class="title">益禾堂草莓芝士奶盖</text>
+        <text class="date">有效期至2019-04-23</text>
+        
+        </view>
+         <image src="/images/yishiyong.png" wx:if="{{checked2}}" class="yishiyong"></image>
+        </view>
+    
+  </view>
+
+
+</view>
