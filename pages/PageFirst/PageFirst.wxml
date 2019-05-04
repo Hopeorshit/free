@@ -1,6 +1,5 @@
-
 <view hidden="{{current == 1? false: true}}">
- <index-cmp/>
+  <index-cmp/>
 </view>
 <view hidden="{{current == 3? false: true}}">
   <unuse-cmp/>
@@ -10,29 +9,28 @@
 </view>
 
 
-
+<!-- Tabbar -->
 <view class="tabbar">
+  <view class="container">
+    <view class="first" style='flex:1' bindtap='nagivateTo1'>
+      <image src="{{current==1?index_selected:index }}" />
+      <text class="{{current==1?'red':'gray'}}">首页</text>
+    </view>
 
-<view class="container">
-  <view class="first" style='flex:1' bindtap='nagivateTo1'>
-    <image src="{{current==1?index_selected:index }}"/>
-    <text class="{{current==1?'red':'gray'}}">首页</text>
-  </view>
+    <view class="second" style='flex:1' bindtap='nagivateTo2'>
+      <image src="{{launch}}" />
+      <text class='gray'>发起</text>
+    </view>
 
-   <view class="second" style='flex:1' bindtap='nagivateTo2'>
-    <image src="{{launch}}"/>
-    <text class='gray'>发起</text>
-  </view>
+    <view class="three" style='flex:1' bindtap='nagivateTo3'>
+      <image src="{{current==3?unuse_selected:unuse}}" />
+      <text class="{{current==3?'red':'gray'}}">待使用</text>
+    </view>
 
-   <view class="three" style='flex:1' bindtap='nagivateTo3'>
-     <image src="{{current==3?unuse_selected:unuse}}"/>
-    <text class="{{current==3?'red':'gray'}}">待使用</text>
-  </view>
+    <view class="four" style='flex:1' bindtap='nagivateTo4'>
+      <image src="{{current==4?my_selected:my}}" />
+      <text class="{{current==4?'red':'gray'}}">我的</text>
+    </view>
 
-   <view class="four" style='flex:1' bindtap='nagivateTo4'>
-    <image src="{{current==4?my_selected:my}}"/>
-    <text class="{{current==4?'red':'gray'}}">我的</text>
-  </view>
-  
   </view>
 </view>

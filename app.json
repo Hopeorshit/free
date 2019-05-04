@@ -1,19 +1,18 @@
 {
   "pages": [
     "pages/PageFirst/PageFirst",
-      "pages/canyu-after/canyu-after",
-   
+    "pages/canyu-after/canyu-after",
     "pages/launch-after/launch-after",
     "pages/launch/launch",
     "pages/IndexDetail/IndexDetail",
     "pages/logs/logs",
     "pages/ticket/ticket"
-  
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#edcfc7",
     "navigationBarTitleText": "免单",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
