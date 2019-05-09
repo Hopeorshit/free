@@ -6,7 +6,9 @@
     "pages/launch/launch",
     "pages/IndexDetail/IndexDetail",
     "pages/logs/logs",
-    "pages/ticket/ticket"
+    "pages/ticket/ticket",
+    "pages/shop/shop",
+    "pages/infoedit/infoedit"
   ],
   "window": {
     "backgroundTextStyle": "light",
