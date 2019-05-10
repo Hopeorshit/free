@@ -1,0 +1,9 @@
+<view class="contain">
+  <view class="content">
+  <image src="/images/yyzz.png"> </image>
+  <text>营业执照（点击上传）：</text>
+   <image class="imag"bindtap='chooseImage' src='{{imageSource}}'></image>
+  </view>
+</view>
+
+<button>上 传</button>

@@ -16,9 +16,16 @@
   <view class="gray"></view>
 
   <view class="threeticket">
-  <myticket-cmp src="/images/未使用.png" use="未使用"/>
-  <myticket-cmp src="/images/已使用.png" use="已使用"/>
-  <myticket-cmp src="/images/过.png" use="已过期"/>
+  <myticket-cmp src="/images/未使用.png" use="未使用" typeto="1"/>
+  <myticket-cmp src="/images/已使用.png" use="已使用" typeto="1"/>
+  <myticket-cmp src="/images/过.png" use="已过期" typeto="1"/>
+  </view>
+
+  <view class="gray"></view>
+
+  <view class="user">
+     <myticket-cmp src="/images/sjxx.png" use="商家信息" typeto="3"/>
+     <myticket-cmp src="/images/sjrz.png" use="商家认证" typeto="4"/>
   </view>
 
   <view class="gray"></view>

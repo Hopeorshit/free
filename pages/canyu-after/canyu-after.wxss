@@ -7,17 +7,18 @@
   height: 626rpx
 }
 .mian{
-   z-index: 99;
+   z-index: 1;
   position: absolute;
   top:150rpx;
   left: 185rpx;
   color: #666f6c
 }
 .quan{
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   top:200rpx;
   left:180rpx;
+  width: 410rpx;
   color: #666f6c;
   font-size: 28rpx
 }
@@ -175,4 +176,68 @@ progress{
   margin-left: 30rpx;
   color: #666f6c
 
+}
+.share{
+  position: absolute;
+  margin-top:34rpx;
+  margin-left: 404rpx;
+
+  font-size: 30rpx;
+  color:royalblue
+}
+.sharelist{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  height:360rpx;
+}
+.sharelist button{
+  width: 100%;
+  border:none;
+  background-color: #fff;
+  height: 120rpx;
+  line-height: 120rpx
+}
+
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 400px;
+}
+.preview {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top:0;
+  z-index: 2;
+}
+.mask{
+   width: 100%;
+  height: 844rpx;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top:0;
+}
+.preview image{
+  width: 80%;
+  position: absolute;
+  height: 84%;
+  top: 4%;
+  left: 10%;
+  z-index: 3;
+  border: 1px dashed #fff;
+}
+.preview button{
+  width: 40%;
+  position: absolute;
+  bottom: 40rpx;
+  left: 30%;
+  background-color:#adaaad;
+  color: #fff
+  
 }

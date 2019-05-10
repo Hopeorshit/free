@@ -5,3 +5,4 @@
    </view>
    <image class="icon" src="/images/更多.png" bind:tap="ticket"></image>
 </view>
+

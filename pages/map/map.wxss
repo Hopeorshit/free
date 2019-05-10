@@ -1,0 +1,14 @@
+/* pages/map/map.wxss */
+.address{
+  background-color: #edcfc7;
+  width: 100%;
+  height: 120rpx;
+  position: absolute;
+  bottom: 0;
+  
+}
+.address text{
+  line-height: 120rpx;
+  color: #666f6c;
+  margin-left: 30rpx;
+}

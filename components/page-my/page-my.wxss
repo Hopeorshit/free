@@ -71,3 +71,6 @@
   height: 40rpx;
   width:40rpx; 
 }
+/* .user{
+  height: 400rpx;
+} */
