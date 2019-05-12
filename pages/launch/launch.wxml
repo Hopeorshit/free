@@ -1,42 +1,38 @@
-
-<image class="mian" src="{{imgsrc}}"/>
+<image class="mian" src="{{imgsrc}}" />
 
 <view class="content">
-<view class="one">
-<text style='flex:1' >免单内容</text>
-<input style='flex:1' type='text' placeholder='例：XX店299四人餐*'placeholder-style="font-size:18rpx;font-weight:lighter" style='direction:rtl' value="{{title}}" bind:blur="onConfirm" ></input>
-</view>
-<view class="one">
-<text style='flex:1'>免单份数</text>
-<input  style='flex:1'type='number' placeholder='份数*'placeholder-style="font-size:18rpx;font-weight:lighter" style="direction:rtl" value="{{num}}" bind:blur="onConfirm2"></input>
-</view>
+  <view class="one">
+    <text style='flex:1'>免单内容</text>
+    <input style='flex:1' type='text' placeholder='例：XX店299四人餐*' placeholder-style="font-size:18rpx;font-weight:lighter" style='direction:rtl' value="{{title}}" bind:blur="onConfirm"></input>
+  </view>
+  <view class="one">
+    <text style='flex:1'>免单份数</text>
+    <input style='flex:1' type='number' placeholder='份数*' placeholder-style="font-size:18rpx;font-weight:lighter" style="direction:rtl" value="{{num}}" bind:blur="onConfirm2"></input>
+  </view>
 </view>
 
 <text class="gray">集赞免单</text>
 
 <view class="content">
-<view class="one">
-<text style='flex:1'>集赞个数</text>
-<input style='flex:1'type='number' placeholder='好友点赞数'placeholder-style="font-size:18rpx;font-weight:lighter" style='direction:rtl'></input>
-</view>
-<view class="one">
-<text style='flex:1'>开奖时间</text>
-<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
-         <view classs="picker"><input value="{{orderData}}" type='number' placeholder='活动开奖时间*'  placeholder-style="font-size:28rpx;font-weight:lighter" style="direction:rtl" disabled='true'></input></view>
-</picker>
-</view>
+  <view class="one">
+    <text style='flex:1'>集赞个数</text>
+    <input style='flex:1' type='number' placeholder='好友点赞数' placeholder-style="font-size:18rpx;font-weight:lighter" style='direction:rtl'></input>
+  </view>
+  <view class="one">
+    <text style='flex:1'>开奖时间</text>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view classs="picker">
+        <input value="{{orderData}}" type='number' placeholder='活动开奖时间*' placeholder-style="font-size:28rpx;font-weight:lighter" style="direction:rtl" disabled='true'></input>
+      </view>
+    </picker>
+  </view>
 </view>
 
 <text class="gray">免单说明</text>
 
 <view class="content1">
-<textarea class="area" placeholder='比如免单券的使用限制等'placeholder-style="font-size:28rpx;font-weight:lighter" ></textarea>
+  <textarea class="area" placeholder='比如免单券的使用限制等' placeholder-style="font-size:28rpx;font-weight:lighter"></textarea>
 </view>
 
 
-<button class="btn" bind:tap="launchbtn" >发 起 免 单</button>
-
-
-
-
-
+<button class="btn" bind:tap="launchbtn">发 起 免 单</button>

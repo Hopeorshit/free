@@ -7,8 +7,8 @@
     "pages/IndexDetail/IndexDetail",
     "pages/logs/logs",
     "pages/ticket/ticket",
-    "pages/shop/shop",
-    "pages/infoedit/infoedit"
+    "pages/infoedit/infoedit",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

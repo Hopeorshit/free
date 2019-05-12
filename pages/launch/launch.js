@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date:null,
+    date: null,
     multiIndex: [0, 0, 0],
     index: 0,
     multiArray: [],
@@ -14,54 +14,53 @@ Page({
     day: "",
     startHour: "",
     orderData: null,
-    title:"",
-    num:"",
+    title: "",
+    num: "",
     imgsrc: '/images/mian.jpg',
-    good:{
-      title:'',
-      num:'',
-      orderData:null,
-      imgsrc:''
+    good: {
+      title: '',
+      num: '',
+      orderData: null,
+      imgsrc: ''
     }
 
   },
 
 
-launchbtn:function(){
-  let title=this.data.title
-  let num=this.data.num
-  let orderData=this.data.orderData
-  this.setData({
-    good:{
-      title:title,
-      num:num,
-      orderData:orderData,
-      imgsrc:this.data.imgsrc
-    }
-  })
-  if(this.data.title.length==0||this.data.num.length==0||this.data.orderData==null){
-    wx.showToast({
-      title: '必填项不能为空',
-      icon: 'none',
-      duration: 2000
-    }) 
-  }
-  else{
-    var good = JSON.stringify(this.data.good)
-      wx.navigateTo({
-        url: '../../pages/launch-after/launch-after?good=' +good,
+  launchbtn: function() {
+    let title = this.data.title
+    let num = this.data.num
+    let orderData = this.data.orderData
+    this.setData({
+      good: {
+        title: title,
+        num: num,
+        orderData: orderData,
+        imgsrc: this.data.imgsrc
+      }
+    })
+    if (this.data.title.length == 0 || this.data.num.length == 0 || this.data.orderData == null) {
+      wx.showToast({
+        title: '必填项不能为空',
+        icon: 'none',
+        duration: 2000
       })
-    
-  }
- 
-},
-onConfirm:function(event){
-  let q=event.detail.value
-this.setData({
-title:q
-})
-},
-  onConfirm2: function (event) {
+    } else {
+      var good = JSON.stringify(this.data.good)
+      wx.navigateTo({
+        url: '../../pages/launch-after/launch-after?good=' + good,
+      })
+
+    }
+
+  },
+  onConfirm: function(event) {
+    let q = event.detail.value
+    this.setData({
+      title: q
+    })
+  },
+  onConfirm2: function(event) {
     let q = event.detail.value
     this.setData({
       num: q
@@ -71,7 +70,7 @@ title:q
 
 
   /*时间选择器*/
-  surplusMonth: function (year) {
+  surplusMonth: function(year) {
     var date = new Date();
     var year2 = date.getFullYear()
     var month = date.getMonth() + 1
@@ -94,7 +93,7 @@ title:q
     return monthDatas;
   },
   //天数计算
-  surplusDay: function (year, month, day) {
+  surplusDay: function(year, month, day) {
     var days = 31;
     var dayDatas = [];
     var date = new Date();
@@ -110,7 +109,7 @@ title:q
       case 12:
         days = 31;
         break;
-      //对于2月份需要判断是否为闰年
+        //对于2月份需要判断是否为闰年
       case 2:
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
           days = 29;
@@ -140,17 +139,23 @@ title:q
     return dayDatas;
   },
   //时间计算
-  surplusHour: function (year, month, day, hour) {
+  surplusHour: function(year, month, day, hour) {
     var date = new Date();
     var year2 = date.getFullYear()
     var month2 = date.getMonth() + 1
     var day2 = date.getDate();
-    var hours = [['00时', '02时', '04时', '06时', '08时', '10时', '12时', '14时', '16时', '18时', '20时', '22时', '24时'],[]];
+    var hours = [
+      ['00时', '02时', '04时', '06时', '08时', '10时', '12时', '14时', '16时', '18时', '20时', '22时', '24时'],
+      []
+    ];
 
     if (year == year2 && month == month2 && day == day2) {
       var hour2 = hour
       var j = 0;
-      var surplusHours = [[], []];
+      var surplusHours = [
+        [],
+        []
+      ];
       for (var i = j; i < hours[0].length; i++) {
         surplusHours[0].push(hours[0][i]);
       }
@@ -161,15 +166,15 @@ title:q
     }
     return hours;
   },
-binddate:function(e){
-this.setData({
-  date:e.detail.value
-})
-},
-  onLoad: function (options) {
- wx.hideTabBar({
-   animation:false
- })
+  binddate: function(e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  onLoad: function(options) {
+    wx.hideTabBar({
+      animation: false
+    })
     var date = new Date();
     var year = date.getFullYear()
     var month = date.getMonth() + 1
@@ -182,7 +187,7 @@ this.setData({
       multiArray: [
         surplusMonth,
         surplusDay,
-      surplusHour[0],
+        surplusHour[0],
       ],
       year: year,
       month: month,
@@ -190,7 +195,7 @@ this.setData({
       startHour: surplusHour[0],
     })
   },
-  bindMultiPickerColumnChange: function (e) {
+  bindMultiPickerColumnChange: function(e) {
     var date = new Date();
     var year1 = date.getFullYear()
     var month1 = date.getMonth() + 1
@@ -207,7 +212,7 @@ this.setData({
     data.multiIndex[e.detail.column] = e.detail.value;
     switch (e.detail.column) {
       case 0:
-      
+
         var monthStr = data.multiArray[e.detail.column][e.detail.value];
         var month = monthStr.substring(0, monthStr.length - 1);
         data.month = month;
@@ -256,11 +261,11 @@ this.setData({
     this.setData(data)
   },
   //value 改变时触发 change 事件
-  bindMultiPickerChange: function (e) {
+  bindMultiPickerChange: function(e) {
     var dateStr =
       this.data.multiArray[0][this.data.multiIndex[0]] +
       this.data.multiArray[1][this.data.multiIndex[1]] +
-      this.data.multiArray[2][this.data.multiIndex[2]] ;
+      this.data.multiArray[2][this.data.multiIndex[2]];
     this.setData({
       orderData: dateStr
     })
@@ -270,49 +275,49 @@ this.setData({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })
