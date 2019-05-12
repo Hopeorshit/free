@@ -1,0 +1,44 @@
+<form bindsubmit='onSubmit'>
+
+<view class="contain">
+
+<view class="conent">
+   <view class="con">
+   <image class="icon" src="/images/dp.png"></image>
+   <text class="use" >店铺名称</text>
+   </view>
+   <input name="title" style='flex:1' type='text'style='direction:rtl;font-size:26rpx' value="{{title}}" auto-focus='true' ></input>
+</view>
+<view class="conent">
+   <view class="con">
+   <image class="icon" src="/images/dz.png"></image>
+   <text class="use" bind:blur="onConfirm2">店铺地址</text>
+   </view>
+     <input bind:tap="map" style='flex:1' type='text'style='direction:rtl;font-size:26rpx;width:520rpx;' value="{{mobileLocation.address}}"></input>
+</view>
+
+<view class="conent">
+   <view class="con">
+   <image class="icon" src="/images/dh.png"></image>
+   <text class="use" >联系电话</text>
+   </view>
+   <input name="phone"style='flex:1' type='text'style='direction:rtl;font-size:26rpx' value="{{tel}}"></input>
+</view>
+
+<view class="conent">
+   <view class="con">
+   <image class="icon" src="/images/zp.png"></image>
+   <text class="use" >店铺照片</text>
+   </view>
+     <image class="imag"bindtap='chooseImage' src='{{imageSource}}'></image>
+</view>
+</view>
+
+
+
+<button bindtap='Tijiao' formType='submit'>提 交</button>
+
+
+
+
+</form>

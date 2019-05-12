@@ -4,7 +4,7 @@
     <view class='title'>
     <text>"{{good.title}}"</text>
     </view>
-    <view class="address">
+    <view class="address" bindtap='address'>
       <image src="/images/ditu.png"></image>
       <text >{{good.address}}</text>
     </view>

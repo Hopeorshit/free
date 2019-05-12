@@ -1,0 +1,9 @@
+/* pages/address/address.wxss */
+button{
+
+  background-color: #edcfc7;
+  color: #fff;
+  bottom: 0;
+  
+
+}

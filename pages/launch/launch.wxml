@@ -1,4 +1,4 @@
-<button class="changeimg" bind:tap="changeimg">更换免单图片</button>
+
 <image class="mian" src="{{imgsrc}}"/>
 
 <view class="content">
@@ -20,27 +20,17 @@
 <input style='flex:1'type='number' placeholder='好友点赞数'placeholder-style="font-size:18rpx;font-weight:lighter" style='direction:rtl'></input>
 </view>
 <view class="one">
-<text style='flex:1'>截止时间</text>
+<text style='flex:1'>开奖时间</text>
 <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
-         <view classs="picker"><input value="{{orderData}}" type='number' placeholder='活动截止时间*'  placeholder-style="font-size:28rpx;font-weight:lighter" style="direction:rtl" disabled='true'></input></view>
+         <view classs="picker"><input value="{{orderData}}" type='number' placeholder='活动开奖时间*'  placeholder-style="font-size:28rpx;font-weight:lighter" style="direction:rtl" disabled='true'></input></view>
 </picker>
 </view>
 </view>
 
-<text class="gray">免单券使用</text>
+<text class="gray">免单说明</text>
 
-<view class="content">
-<view class="one">
-<text style='flex:1'>门店地址</text>
-<input style='flex:1'type='text' placeholder='地址'placeholder-style="font-size:18rpx;font-weight:lighter" style='direction:rtl'></input>
-</view>
-<view class="one">
-<text style='flex:1'>有效期至</text>
-<picker style='flex:1' mode="date" value="{{date}}" start="2019-01-01" end="2038-01-01" bindchange='binddate' fields="day">
-     <view classs="picker"><input value="{{date}}" type='number' placeholder='使用期限'placeholder-style="font-size:18rpx; font-weight:lighter" style="direction:rtl" disabled='true'></input></view>
-     </picker>
-
-</view>
+<view class="content1">
+<textarea class="area" placeholder='比如免单券的使用限制等'placeholder-style="font-size:28rpx;font-weight:lighter" ></textarea>
 </view>
 
 

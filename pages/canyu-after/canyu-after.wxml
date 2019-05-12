@@ -1,11 +1,12 @@
 <view class="one">
     <image src="/images/dianzan.png"></image>
     <text class="mian">免单券</text>
-   <text class="quan">【小东北 豪华双人餐】</text>
+   <text class="quan">【{{title}}】</text>
 </view>
 
 <view class="two">
  <text class="dangqian">当前助力</text>
+ <text class="share" bindtap='share'>邀请好友助力免单</text>
  <text class="haicha">还差<text class="num">12</text>个赞有机会免单成功</text>
  <view class="tiao">
  <progress percent='70' activeColor='#dea59c' stroke-width="20" active ></progress>
@@ -18,7 +19,7 @@
   </text>
  </view>
  <view class="btn1" bindtap='canyu' hidden="{{dianzan}}">
-  <text class="btntitle1">
+  <text class="btntitle1" bindtap='metoo'>
   我 也 要 免 单
   </text>
  </view>
@@ -45,5 +46,17 @@
     活动规则
   </text>
   <text class="gui">1. 单次免单活动每个用户只能加速一次</text>
+</view>
+
+<view class="sharelist" wx-if="{{show}}">
+  <button open-type='share'>指定分享—微信好友</button>
+  <button bind:tap="shareImgbtn">公开分享—生成分享图</button>
+  <button bind:tap="cancel">取消</button>
+</view>
+<view class="mask" hidden='{{mask}}'></view>
+<canvas canvas-id="shareImg" style="width:604px;height:1016px"></canvas>
+<view hidden='{{hidden}}' class='preview'>
+  <image src='{{prurl}}' mode='widthFix'></image>
+  <button type='primary' size='mini' bind:tap='save'>保存分享图</button>
 </view>
 

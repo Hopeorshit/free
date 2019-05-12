@@ -67,3 +67,21 @@ display: flex;
 input{
   font-size:28rpx;
 }
+.content{
+  width: 100%;
+  background-color: #fff;
+  height: 200rpx;
+}
+.area{
+  padding-top:30rpx;
+  width: 90%;
+  margin-left: 40rpx;
+  font-size: 26rpx;
+  height: 150rpx;
+
+}
+.content1{
+  width: 100%;
+  background-color: #fff;
+  height: 180rpx;
+}

@@ -1,45 +1,18 @@
-// pages/IndexDetail/IndexDetail.js
-import { GoodModel } from '../../model/index-model.js'
-let goodModel = new GoodModel()
+// pages/SJRZ/sjzr.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  good:Object,
-  bid:""
-  
+    imageSource: "../../images/addPic.png",
   },
 
   /**
    * 生命周期函数--监听页面加载
-   *//*bid是点击首页列表传递的good.id值 book传入的数据是数组项*/
+   */
   onLoad: function (options) {
-    let bid = options.bid
-      this.setData({
-        good: goodModel.getHotList()[bid-1],
-        bid:bid
-      })
-    
-  },
-  address:function(){
-    wx.navigateTo({
-      url: '/pages/map/map',
-    })
-  },
-  goLaunch:function(){
-    wx.navigateTo({
-      url: '/pages/launch/launch',
-    })
 
-  },
-  goCanyu:function(){
-    var good = JSON.stringify(this.data.good)
-    wx.navigateTo({
-      url: '../../pages/canyu-after/canyu-after?good=' + good,
-    })
-  
   },
 
   /**
@@ -47,6 +20,20 @@ Page({
    */
   onReady: function () {
 
+  },
+
+  chooseImage: function () {
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['compressed'],
+      success: function (res) {
+        that.setData({
+          imageSource: res.tempFilePaths[0],
+          imageToUpload: res.tempFilePaths[0],
+        })
+      },
+    })
   },
 
   /**

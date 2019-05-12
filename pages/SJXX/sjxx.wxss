@@ -1,11 +1,15 @@
+/* pages/SJXX/sjxx.wxss */
 /* components/myticket/myticket.wxss */
-.container{
+.contain{
+  background-color: #fff
+}
+.conent{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 680rpx;
-  height: 90rpx;
+  height: 110rpx;
   border-bottom: 3rpx solid #f0f0f0;
   margin-left:26rpx;
 }
@@ -25,4 +29,17 @@ margin-left: 20rpx;
   /* justify-content: space-between; */
   width: 180rpx;
   
+}
+
+button{
+  width: 94%;
+  margin-top:30rpx;
+  background-color: #dea59c;
+  color: #fff;
+  border-radius: 0
+}
+.imag{
+  height: 90rpx;
+  width: 90rpx;
+  margin-left: 220rpx;
 }

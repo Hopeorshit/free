@@ -11,6 +11,10 @@ Component({
     src:{
       type:String,
       value:""
+    },
+    typeto:{
+      type:Number,
+      value:""
     }
   },
 
@@ -25,8 +29,25 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    ticket:function(){wx.navigateTo({
-      url: '/pages/ticket/ticket',
-    })
-  }}
+    ticket:function(){
+     
+      if (this.properties.typeto==1)
+      {
+        wx.navigateTo({
+          url: '/pages/ticket/ticket',
+      })}
+      else{
+        if (this.properties.typeto == 3)
+        {wx.navigateTo({
+          url: '/pages/SJXX/sjxx',
+        })}
+        else{
+          wx.navigateTo({
+            url: '/pages/SJRZ/sjzr',
+          })
+        }
+      }
+
+    }
+  }
 })
